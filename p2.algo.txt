@@ -1,0 +1,16 @@
+sentence = input("Enter a sentence: ")
+length = 0
+num_words = 0
+num_vowels = 0
+
+for ch in sentence:
+    length += 1
+    if ch in "aeiouAEIOU":
+        num_vowels += 1
+    if ch == " ":
+        num_words += 1
+
+num_words += 1
+print("Length:", length)
+print("Number of words:", num_words)
+print("Number of vowels:", num_vowels)
